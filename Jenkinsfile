@@ -11,6 +11,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/bhumikarajput-2005/MyMavenSelenium1'
+            }
         }
 
         stage('Build') {
@@ -37,5 +38,3 @@ pipeline {
         }
     }
 }
-}
-
